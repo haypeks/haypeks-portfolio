@@ -45,7 +45,7 @@ const NavBar = () => {
             </li>
           ))}
         </ul>
-        <button className="bg-primary px-8  rounded -mr-2 sm:mr-0">
+        <button className="bg-primary px-6  rounded -mr-2 sm:mr-0">
           Resume
         </button>
         <div
@@ -60,11 +60,11 @@ const NavBar = () => {
         </div>
 
         {nav && (
-          <ul className="flex flex-col py-[70px] gap-2 justify-center items-start absolute top-0 left-0 w-full h-20 mt-[63px] bg-black text-white">
+          <ul className="flex flex-col py-28 gap-4 justify-center items-start absolute top-0 left-0 w-full h-20 mt-14 bg-gray-900 border-t-2 text-white">
             {links.map(({ id, link }) => (
               <li
                 key={link.id}
-                className="px-4  cursor-pointer uppercase text-xs text-gray-400 hover:scale-110 duration-200 "
+                className="px-4  cursor-pointer uppercase text-md text-gray-400 hover:scale-110 duration-200 "
               >
                 {link}
               </li>
