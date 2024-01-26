@@ -60,11 +60,11 @@ const NavBar = () => {
         </div>
 
         {nav && (
-          <ul className="flex flex-col  gap-8 justify-center items-center absolute top-0 left-0 w-full h-screen mt-14 bg-gray-900 border-t-2 text-white">
+          <ul className="flex flex-col  gap-8 justify-center items-center absolute top-0 left-0 w-full h-screen mt-14 bg-black  text-white">
             {links.map(({ id, link }) => (
               <li
                 key={link.id}
-                className="px-4  cursor-pointer uppercase text-lg text-gray-400 hover:scale-110 duration-200 "
+                className="px-4  cursor-pointer uppercase text-lg text-gray-300 hover:scale-110 duration-200 "
               >
                 {link}
               </li>
