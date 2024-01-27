@@ -24,7 +24,7 @@ const Home = () => {
           websites. I love to work on web applications using technologies like
           Javascript, React, Tailwind, Next Js.
         </p>
-        <div className="bg-primary text-black w-fit cursor-pointer rounded px-6 py-1 md:font-bold md:px-16 md:py-2 font-medium hover:scale-125 hover:text-gray-700">
+        <div className="bg-primary text-black w-fit cursor-pointer rounded px-6 py-1 md:font-bold md:px-16 md:py-2 font-medium hover:scale-110 hover:text-gray-700">
           Portfolio
         </div>
         <ul className="flex md:hidden text-white pt-36">

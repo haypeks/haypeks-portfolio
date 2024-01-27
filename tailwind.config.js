@@ -18,6 +18,13 @@ module.exports = {
       gridTemplateColumns: {
         "skills-grid": "repeat(2, 1fr)",
       },
+      gridTemplateAreas: {
+        layout: [
+          "header header header",
+          "nav    main   main",
+          "nav    footer footer",
+        ],
+      },
     },
   },
   plugins: [],

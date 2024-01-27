@@ -15,7 +15,7 @@ const Portfolio = () => {
         "Lorem Ipsium rure dolor in reprehenderit in voluptate velit esse cillum dolo. rure dolor in reprehenderit in voluptate velit esse cillum dolo. rure dolor in reprehenderit in voluptate velit esse cillum dolo.rure dolor in reprehenderit in voluptate velit esse cillum dolo",
     },
     {
-      id: 1,
+      id: 2,
       src: portfolio,
       heading: "Portfolio",
       hrefDemo: "https://linkedin.com",
@@ -24,7 +24,34 @@ const Portfolio = () => {
         "Lorem Ipsium rure dolor in reprehenderit in voluptate velit esse cillum dolo. rure dolor in reprehenderit in voluptate velit esse cillum dolo. rure dolor in reprehenderit in voluptate velit esse cillum dolo.rure dolor in reprehenderit in voluptate velit esse cillum dolo",
     },
     {
-      id: 1,
+      id: 3,
+      src: tipcalculator,
+      heading: "Tip Calculator",
+      hrefDemo: "https://linkedin.com",
+      hrefCode: "https://github.com",
+      paragraph:
+        "Lorem Ipsium rure dolor in reprehenderit in voluptate velit esse cillum dolo. rure dolor in reprehenderit in voluptate velit esse cillum dolo. rure dolor in reprehenderit in voluptate velit esse cillum dolo.rure dolor in reprehenderit in voluptate velit esse cillum dolo",
+    },
+    {
+      id: 4,
+      src: tipcalculator,
+      heading: "Tip Calculator",
+      hrefDemo: "https://linkedin.com",
+      hrefCode: "https://github.com",
+      paragraph:
+        "Lorem Ipsium rure dolor in reprehenderit in voluptate velit esse cillum dolo. rure dolor in reprehenderit in voluptate velit esse cillum dolo. rure dolor in reprehenderit in voluptate velit esse cillum dolo.rure dolor in reprehenderit in voluptate velit esse cillum dolo",
+    },
+    {
+      id: 5,
+      src: tipcalculator,
+      heading: "Tip Calculator",
+      hrefDemo: "https://linkedin.com",
+      hrefCode: "https://github.com",
+      paragraph:
+        "Lorem Ipsium rure dolor in reprehenderit in voluptate velit esse cillum dolo. rure dolor in reprehenderit in voluptate velit esse cillum dolo. rure dolor in reprehenderit in voluptate velit esse cillum dolo.rure dolor in reprehenderit in voluptate velit esse cillum dolo",
+    },
+    {
+      id: 6,
       src: tipcalculator,
       heading: "Tip Calculator",
       hrefDemo: "https://linkedin.com",
@@ -36,7 +63,7 @@ const Portfolio = () => {
   return (
     <div
       name="portfolio"
-      className="w-full md:h-screen bg-secondary justify-center items-center"
+      className="w-full h-full bg-secondary justify-center items-center"
     >
       <div className="max-w-screen-xl p-4 mx-auto flex flex-col justify-center items-center w-full h-full">
         <div>
@@ -65,10 +92,10 @@ const Portfolio = () => {
                   {paragraph}
                 </p>
                 <div className="flex items-center gap-8 justify-evenly">
-                  <button className="bg-primary text-black w-fit text-xs cursor-pointer px-4 py-1 rounded border-b-2 border-black mt-4 md:font-bold font-medium hover:scale-125 hover:text-gray-700">
+                  <button className="bg-primary text-black w-fit text-xs cursor-pointer px-4 py-1 rounded border-b-2 border-black mt-4 md:font-bold font-medium hover:scale-105 hover:text-gray-700">
                     <a href={hrefDemo}>Demo</a>
                   </button>
-                  <button className="bg-primary text-black w-fit text-xs cursor-pointer px-4 py-1 rounded border-b-2 border-black mt-4 md:font-bold  font-medium hover:scale-125 hover:text-gray-700">
+                  <button className="bg-primary text-black w-fit text-xs cursor-pointer px-4 py-1 rounded border-b-2 border-black mt-4 md:font-bold  font-medium hover:scale-105 hover:text-gray-700">
                     <a href={hrefCode}>Code</a>
                   </button>
                 </div>

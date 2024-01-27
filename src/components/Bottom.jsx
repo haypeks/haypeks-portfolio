@@ -7,17 +7,17 @@ import { IoMail } from "react-icons/io5";
 const Bottom = () => {
   return (
     <div name="footer" className="w-full  bg-black p-4 text-white">
-      <div className="grid grid-cols-1 grid-ares-layout gap-8 place-items-center items-center">
+      <div className="grid layout gap-8 place-items-center py-8 items-center w-full">
         <div className="[grid-area:logo]">
-          <img className="w-24 h-6.24" src={Logo} alt="" />
+          <img className="w-31.2 h-8.112" src={Logo} alt="" />
         </div>
         <nav>
-          <h2>links</h2>
-          <ul>
-            <li>About</li>
-            <li>Portfolio</li>
-            <li>Skills</li>
-            <li>Contact</li>
+          <ul className="text-xl flex flex-col gap-3 ">
+            <li className="cursor-pointer text-gray-300">Home</li>
+            <li className="cursor-pointer text-gray-300">About</li>
+            <li className="cursor-pointer text-gray-300">Portfolio</li>
+            <li className="cursor-pointer text-gray-300">Skills</li>
+            <li className="cursor-pointer text-gray-300">Contact</li>
           </ul>
         </nav>
         <div className="[grid-area:socials]">
@@ -36,9 +36,9 @@ const Bottom = () => {
             </li>
           </ul>
         </div>
-        <div className="[grid-area:copyright]">
-          Copyright 2024. All Rights Reserved
-        </div>
+      </div>
+      <div className="text-sm text-center md:text-right md:mx-8">
+        Copyright 2024 Haypeks. All Rights Reserved
       </div>
     </div>
   );

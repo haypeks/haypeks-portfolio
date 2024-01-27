@@ -9,5 +9,15 @@
   }
 }
 
-@layer components {
+.layout {
+  grid-template-areas:
+    "socials"
+    "nav"
+    "logo";
+}
+
+@media (min-width: 47em) {
+  .layout {
+    grid-template-areas: "logo nav socials";
+  }
 }
