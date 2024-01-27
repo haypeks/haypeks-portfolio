@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         primary: " #C7FF00",
         secondary: "#F2F2F2",
+        skillsbg: "hsla(73, 100%, 95%, 1)",
       },
       margin: {
         "63px": "63px",

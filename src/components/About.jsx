@@ -32,7 +32,7 @@ const About = () => {
               Contact
             </div>
           </div>
-          <div className="md:w-1/2 my-16 md:my-4">
+          <div className="md:w-1/2 my-16 md:my-4 bg-skillsbg">
             <h3 className=" text-3xl font-semibold text-center">My Skills</h3>
             <ul className="pt-6 grid grid-cols-2 md:grid-cols-3 gap-8 place-items-center">
               <li className="text-center bg-black text-primary w-36 md:w-28 py-1 md:py-2">
