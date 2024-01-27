@@ -25,7 +25,7 @@ const Home = () => {
           Javascript, React, Tailwind, Next Js.
         </p>
         <div className="bg-primary text-black w-fit cursor-pointer rounded px-6 py-1 md:font-bold md:px-16 md:py-2 font-medium hover:scale-125 hover:text-gray-700">
-          Project
+          Portfolio
         </div>
         <ul className="flex md:hidden text-white pt-36">
           <li className="px-4 cursor-pointer hover:bg-primary hover:text-black hover:p-0 ">

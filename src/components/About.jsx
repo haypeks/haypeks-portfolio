@@ -7,11 +7,13 @@ const About = () => {
       className="w-full md:h-screen justify-center items-center"
     >
       <div className="max-w-screen-xl p-4 mx-auto flex flex-col justify-center w-full h-full">
-        <h2 className=" text-4xl font-semibold text-center mt-16">ABOUT ME</h2>
-        <p className="leading-8 font-regular text-sm md:text-base md:leading-10 text-center">
-          Explore here for a deeper insight into my background showcasing my
-          expertise in programming, technology and current skillset.
-        </p>
+        <div>
+          <h2 className="text-4xl font-semibold text-center">ABOUT ME</h2>
+          <p className="leading-8 font-regular text-sm md:text-base md:leading-10 text-center">
+            Explore here for a deeper insight into my background showcasing my
+            expertise in programming, technology and current skillset.
+          </p>
+        </div>
         <div className="pt-10 md:flex gap-8">
           <div className="md:w-1/2">
             <h3 className=" text-3xl font-semibold text-center my-4">
@@ -25,10 +27,6 @@ const About = () => {
               adipiscing elit, do eiusmod tempor incididunt ut labore et dolore
               magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
               ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-              irure dolor in reprehenderit in voluptate velit esse cillum dolo
-              re eu fugiat nulla pariatur. Excepteur sint occaec cupidatat
-              proident, sunt in culpa qui officia deserunt mollit anim id est
-              laborum.
             </p>
             <div className="bg-primary text-black w-fit cursor-pointer rounded border-black border-b-2 px-16 py-4 my-4 md:font-bold md:px-16 md:py-2 mx-auto font-medium hover:scale-125 hover:text-gray-700">
               Contact
