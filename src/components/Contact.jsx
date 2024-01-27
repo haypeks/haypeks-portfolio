@@ -20,18 +20,21 @@ const Contact = () => {
               name="name"
               placeholder="Enter your name"
               className="p-2 bg-secondary border-2 rounded-md text-black focus:outline-none"
+              required
             />
             <input
               type="email"
               name="email"
               placeholder="Enter your email"
               className="p-2 bg-secondary border-2 rounded-md text-black focus:outline-none"
+              required
             />
             <textarea
               name="message"
               rows="10"
               placeholder="Enter your message"
               className="p-2 bg-secondary border-2 rounded-md text-black focus:outline-none"
+              required
             ></textarea>
             <button className="bg-primary text-black border-b-2 border-black my-1 w-fit cursor-pointer rounded px-6 py-1 md:font-bold md:px-16 md:py-2 font-medium hover:scale-105 hover:text-gray-700">
               Submit
