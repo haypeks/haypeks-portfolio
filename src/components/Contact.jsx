@@ -6,7 +6,7 @@ const Contact = () => {
       <div className="flex flex-col p-4 justify-center mx-auto max-w-screen-lg h-full">
         <h2 className="text-4xl font-semibold text-center mt-0">CONTACT</h2>
         <p className="leading-8 font-regular text-sm md:text-base md:leading-10 mt-4 mb-16 text-center">
-          Feel free to Contact me by submitting the form below and I will get
+          Feel free to contact me by submitting the form below and I will get
           back to you as soon as possible
         </p>
         <div className="flex justify-center items-center">

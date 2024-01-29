@@ -12,7 +12,7 @@ const SocialLinks = () => {
           <FaLinkedin size={40} />
         </>
       ),
-      href: "https://linkedin.com",
+      href: "https://linkedin.com/in/apeloko-timilehin-113902223",
     },
     {
       id: 1,
@@ -21,7 +21,7 @@ const SocialLinks = () => {
           <FaMedium size={40} />
         </>
       ),
-      href: "https://linkedin.com",
+      href: "https://medium.com/@apelokotimilehin",
     },
     {
       id: 1,
@@ -30,7 +30,7 @@ const SocialLinks = () => {
           <FaGithubSquare size={40} />
         </>
       ),
-      href: "https://linkedin.com",
+      href: "https://github.com/haypeks",
     },
     {
       id: 1,
@@ -39,7 +39,7 @@ const SocialLinks = () => {
           <IoMail size={40} />
         </>
       ),
-      href: "https://linkedin.com",
+      href: "mailto:apelokotimilehin@haypeksdev.com",
     },
   ];
 

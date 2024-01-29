@@ -49,7 +49,7 @@ const NavBar = () => {
           ))}
         </ul>
         <button className="bg-primary px-6  rounded -mr-2 sm:mr-0">
-          Resume
+          <a href="./resume.pdf">Resume</a>
         </button>
         <div
           onClick={() => setNav(!nav)}

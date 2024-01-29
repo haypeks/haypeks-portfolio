@@ -22,13 +22,16 @@ const About = () => {
               Discover more about me!
             </h3>
             <p className="leading-8 md:leading-10 font-regular  text-sm md:text-base">
-              I specialize as a Frontend Web Developer, crafting the interface
-              of websites and web applications that contribute to the success of
-              the final product. Browse through my Projects section to explore
-              some of my completed work. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-              ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+              I believe in creating interfaces that not only look stunning but
+              also enhance the overall user experience. Collaboration is at the
+              heart of my process. Working closely with designers, UX experts,
+              and backend developers, I transform static designs into dynamic,
+              user-friendly interfaces. I believe that the best outcomes emerge
+              when diverse skills come together to create something greater than
+              the sum of its parts. Continuous learning is key to staying
+              relevant in the dynamic world of front-end development. My
+              curiosity drives me to explore emerging technologies, attend
+              conferences, and engage with the vibrant developer community.
             </p>
             <Link to="contact" smooth duration={500}>
               <div className="bg-primary text-black w-fit cursor-pointer rounded border-black border-b-2 px-16 py-4 my-4 md:font-bold md:px-16 md:py-2 mx-auto font-medium hover:text-gray-700">
