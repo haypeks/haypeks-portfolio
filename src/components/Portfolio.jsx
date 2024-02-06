@@ -2,6 +2,7 @@ import React from "react";
 import manage from "../images/manage.jpg";
 import portfolio from "../images/portfolio.jpg";
 import tipcalculator from "../images/tipcalculator.jpg";
+import matak from "../images/matak.jpg";
 
 const Portfolio = () => {
   const portfolios = [
@@ -9,8 +10,8 @@ const Portfolio = () => {
       id: 1,
       src: manage,
       heading: "Manage",
-      hrefDemo: "https://linkedin.com",
-      hrefCode: "https://github.com",
+      hrefDemo: "https://eclectic-clafoutis-98a4e5.netlify.app",
+      hrefCode: "https://github.com/haypeks/Landing-Page",
       paragraph:
         "Lorem Ipsium rure dolor in reprehenderit in voluptate velit esse cillum dolo. rure dolor in reprehenderit in voluptate velit esse cillum dolo. rure dolor in reprehenderit in voluptate velit esse cillum dolo.rure dolor in reprehenderit in voluptate velit esse cillum dolo",
     },
@@ -18,17 +19,17 @@ const Portfolio = () => {
       id: 2,
       src: portfolio,
       heading: "Portfolio",
-      hrefDemo: "https://linkedin.com",
-      hrefCode: "https://github.com",
+      hrefDemo: "https://haypeks-portfolio.netlify.app",
+      hrefCode: "https://github.com/haypeks/haypeks-portfolio",
       paragraph:
         "Lorem Ipsium rure dolor in reprehenderit in voluptate velit esse cillum dolo. rure dolor in reprehenderit in voluptate velit esse cillum dolo. rure dolor in reprehenderit in voluptate velit esse cillum dolo.rure dolor in reprehenderit in voluptate velit esse cillum dolo",
     },
     {
       id: 3,
-      src: tipcalculator,
-      heading: "Tip Calculator",
-      hrefDemo: "https://linkedin.com",
-      hrefCode: "https://github.com",
+      src: matak,
+      heading: "Matak",
+      hrefDemo: "https://grand-concha-1e5ca0.netlify.app",
+      hrefCode: "https://github.com/haypeks/Ecommerce",
       paragraph:
         "Lorem Ipsium rure dolor in reprehenderit in voluptate velit esse cillum dolo. rure dolor in reprehenderit in voluptate velit esse cillum dolo. rure dolor in reprehenderit in voluptate velit esse cillum dolo.rure dolor in reprehenderit in voluptate velit esse cillum dolo",
     },
@@ -36,8 +37,8 @@ const Portfolio = () => {
       id: 4,
       src: tipcalculator,
       heading: "Tip Calculator",
-      hrefDemo: "https://linkedin.com",
-      hrefCode: "https://github.com",
+      hrefDemo: "https://tiny-pudding-d7cfb1.netlify.app",
+      hrefCode: "https://github.com/haypeks/Tip-calculator",
       paragraph:
         "Lorem Ipsium rure dolor in reprehenderit in voluptate velit esse cillum dolo. rure dolor in reprehenderit in voluptate velit esse cillum dolo. rure dolor in reprehenderit in voluptate velit esse cillum dolo.rure dolor in reprehenderit in voluptate velit esse cillum dolo",
     },
@@ -46,7 +47,7 @@ const Portfolio = () => {
       src: tipcalculator,
       heading: "Tip Calculator",
       hrefDemo: "https://linkedin.com",
-      hrefCode: "https://github.com",
+      hrefCode: "https://github.com/haypeks/Tip-calculator",
       paragraph:
         "Lorem Ipsium rure dolor in reprehenderit in voluptate velit esse cillum dolo. rure dolor in reprehenderit in voluptate velit esse cillum dolo. rure dolor in reprehenderit in voluptate velit esse cillum dolo.rure dolor in reprehenderit in voluptate velit esse cillum dolo",
     },
