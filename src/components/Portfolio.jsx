@@ -1,8 +1,9 @@
 import React from "react";
-import manage from "../images/manage.jpg";
-import portfolio from "../images/portfolio.jpg";
-import tipcalculator from "../images/tipcalculator.jpg";
-import matak from "../images/matak.jpg";
+import manage from "../images/manage.png";
+import portfolio from "../images/portfolio.png";
+import tipcalculator from "../images/tipcalculator.png";
+import matak from "../images/matak.png";
+import gamehub from "../images/gamehub.png";
 
 const Portfolio = () => {
   const portfolios = [
@@ -13,7 +14,7 @@ const Portfolio = () => {
       hrefDemo: "https://eclectic-clafoutis-98a4e5.netlify.app",
       hrefCode: "https://github.com/haypeks/Landing-Page",
       paragraph:
-        "Lorem Ipsium rure dolor in reprehenderit in voluptate velit esse cillum dolo. rure dolor in reprehenderit in voluptate velit esse cillum dolo. rure dolor in reprehenderit in voluptate velit esse cillum dolo.rure dolor in reprehenderit in voluptate velit esse cillum dolo",
+        "is a landing page for a business that helps software teams to plan day-to-day tasks while keeping the larger team goals in view. This is a front-end Mentor challenge to test responsive skills.  There are lots of small details and slight content shifts for different screen sizes.                  ",
     },
     {
       id: 2,
@@ -22,7 +23,7 @@ const Portfolio = () => {
       hrefDemo: "https://haypeks-portfolio.netlify.app",
       hrefCode: "https://github.com/haypeks/haypeks-portfolio",
       paragraph:
-        "Lorem Ipsium rure dolor in reprehenderit in voluptate velit esse cillum dolo. rure dolor in reprehenderit in voluptate velit esse cillum dolo. rure dolor in reprehenderit in voluptate velit esse cillum dolo.rure dolor in reprehenderit in voluptate velit esse cillum dolo",
+        "website was built using React and Tailwind. Harnessing the power of React, each component is carefully crafted to ensure a seamless, responsive, and engaging UI. Tailwind CSS allowed me to effortlessly create a visually striking design while the codebase are maintainable.                         ",
     },
     {
       id: 3,
@@ -31,34 +32,34 @@ const Portfolio = () => {
       hrefDemo: "https://grand-concha-1e5ca0.netlify.app",
       hrefCode: "https://github.com/haypeks/Ecommerce",
       paragraph:
-        "Lorem Ipsium rure dolor in reprehenderit in voluptate velit esse cillum dolo. rure dolor in reprehenderit in voluptate velit esse cillum dolo. rure dolor in reprehenderit in voluptate velit esse cillum dolo.rure dolor in reprehenderit in voluptate velit esse cillum dolo",
+        " is a responsive ecommerce website for a clothing business. Powered by the trio of HTML, CSS, and Vanilla JavaScript, this website is a testament to the elegance of simplicity. Built with users in mind, Matak offers a user-focused experience and responsive on all screen sizes.                    ",
     },
     {
       id: 4,
       src: tipcalculator,
-      heading: "Tip Calculator",
+      heading: "Games",
       hrefDemo: "https://tiny-pudding-d7cfb1.netlify.app",
       hrefCode: "https://github.com/haypeks/Tip-calculator",
       paragraph:
-        "Lorem Ipsium rure dolor in reprehenderit in voluptate velit esse cillum dolo. rure dolor in reprehenderit in voluptate velit esse cillum dolo. rure dolor in reprehenderit in voluptate velit esse cillum dolo.rure dolor in reprehenderit in voluptate velit esse cillum dolo",
+        "Lorem Ipsium rure dolor in reprehenderit in voluptate velit esse cillum dolo. rure dolor in reprehenderit in voluptate velit esse cillum dolo. rure dolor in reprehenderit in voluptate velit esse cillum dolo.rure dolor in reprehenderit in voluptate velit esse cillum dolo                          ",
     },
     {
       id: 5,
-      src: tipcalculator,
-      heading: "Tip Calculator",
+      src: gamehub,
+      heading: "GameHub",
       hrefDemo: "https://linkedin.com",
       hrefCode: "https://github.com/haypeks/Tip-calculator",
       paragraph:
-        "Lorem Ipsium rure dolor in reprehenderit in voluptate velit esse cillum dolo. rure dolor in reprehenderit in voluptate velit esse cillum dolo. rure dolor in reprehenderit in voluptate velit esse cillum dolo.rure dolor in reprehenderit in voluptate velit esse cillum dolo",
+        "is a three in one gaming platform. It's interactive playground fueled by the capabilities of JavaScript. From dynamic game mechanics to real-time updates, the site leverages the versatility of JavaScript to create engaging and responsive gaming environments.",
     },
     {
       id: 6,
       src: tipcalculator,
       heading: "Tip Calculator",
-      hrefDemo: "https://linkedin.com",
-      hrefCode: "https://github.com",
+      hrefDemo: "https://tiny-pudding-d7cfb1.netlify.app",
+      hrefCode: "https://github.com/haypeks/Tip-calculator",
       paragraph:
-        "Lorem Ipsium rure dolor in reprehenderit in voluptate velit esse cillum dolo. rure dolor in reprehenderit in voluptate velit esse cillum dolo. rure dolor in reprehenderit in voluptate velit esse cillum dolo.rure dolor in reprehenderit in voluptate velit esse cillum dolo",
+        "One size doesn't fit all when it comes to tipping preferences. With TipCalcPro, users can easily customize tip percentages, split bills among friends, and fine-tune the settings to match their preferences. The goal is to provide flexibility and efficiency in every tipping scenario.",
     },
   ];
   return (
@@ -83,12 +84,12 @@ const Portfolio = () => {
                 className="shadow-sm shadow-gray-700 bg-white p-4 md:my-8  rounded-lg "
               >
                 <img
-                  className="border-2 border-black md:w-auto md:h-30"
+                  className="border-2 border-black md:w-auto"
                   src={src}
                   alt=""
                 />
 
-                <p className="text-black text-xs pt-4 font-light">
+                <p className="text-black text-xs py-4 font-light">
                   <strong className="mr-1 font-bold">{heading}</strong>
                   {paragraph}
                 </p>
