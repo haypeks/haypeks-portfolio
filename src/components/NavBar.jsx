@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import Logo from "../images/logo.png";
 import { Link } from "react-scroll";
+import { motion } from "framer-motion";
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
@@ -31,10 +32,14 @@ const NavBar = () => {
     },
   ];
   return (
-    <div className="flex justify-between items-center  w-full py-4 px-4 bg-gray-900 fixed">
-      <div>
+    <div className="flex justify-between items-center z-50  w-full py-4 px-4 bg-gray-900 fixed">
+      <motion.div
+        initial={{ y: "-100vw" }}
+        animate={{ y: 0 }}
+        transition={{ delay: 0.2, duration: 1, type: "spring" }}
+      >
         <img className="w-24 h-6.24" src={Logo} alt="" />
-      </div>
+      </motion.div>
       <div className="flex gap-4">
         <ul className="hidden sm:flex justify-between items-center text-white">
           {links.map(({ id, link }) => (

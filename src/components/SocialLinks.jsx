@@ -2,6 +2,7 @@ import React from "react";
 import { FaGithubSquare, FaMedium } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 import { IoMail } from "react-icons/io5";
+import { motion } from "framer-motion";
 
 const SocialLinks = () => {
   const links = [
@@ -44,7 +45,12 @@ const SocialLinks = () => {
   ];
 
   return (
-    <div className="hidden md:flex flex-col left-0 top-[35%] text-white absolute">
+    <motion.div
+      initial={{ y: "100vw" }}
+      animate={{ y: 0 }}
+      transition={{ delay: 0.2, duration: 1 }}
+      className="hidden md:flex flex-col left-0 top-[35%] text-white absolute"
+    >
       <ul className="hidden md:flex flex-col gap-8 px-4">
         {links.map(({ id, child, href }) => (
           <li className="cursor-pointer hover:bg-primary hover:text-black hover:pd-0">
@@ -54,7 +60,7 @@ const SocialLinks = () => {
           </li>
         ))}
       </ul>
-    </div>
+    </motion.div>
   );
 };
 

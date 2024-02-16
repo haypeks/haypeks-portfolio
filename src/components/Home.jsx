@@ -4,6 +4,7 @@ import { FaGithubSquare, FaMedium } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 import { IoMail } from "react-icons/io5";
 import { Link } from "react-scroll";
+import { motion } from "framer-motion";
 
 const Home = () => {
   return (
@@ -22,17 +23,28 @@ const Home = () => {
             cursor={false}
           />
         </h2>
-        <p className="text-gray-400 mx-auto lg:text-md text-center text-base pt-2 pb-6 sm:px-20 xl:w-4/6 w-full">
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.2, duration: 1 }}
+          className="text-gray-400 mx-auto lg:text-md text-center text-base pt-2 pb-6 sm:px-20 xl:w-4/6 w-full"
+        >
           A <strong className="text-white">Front-End Developer</strong> with 3
           years experience with a flair for turning ideas into visually
           appealing and interactive digital experiences. I specialize in
           crafting user interfaces that captivate, engage, and leave a lasting
           impression.
-        </p>
+        </motion.p>
         <Link to="portfolio" smooth duration={500}>
-          <div className="bg-primary text-black w-fit cursor-pointer rounded px-6 py-1 md:font-bold md:px-16 md:py-2 font-medium hover:scale-110 hover:text-gray-700">
+          <motion.div
+            initial={{ x: "100vw" }}
+            animate={{ x: 0 }}
+            transition={{ delay: 0.2 }}
+            whileHover={{ scale: 1.1 }}
+            className="bg-primary text-black w-fit cursor-pointer rounded px-6 py-1 md:font-bold md:px-16 md:py-2 font-medium hover:scale-110 hover:text-gray-700"
+          >
             Portfolio
-          </div>
+          </motion.div>
         </Link>
         <ul className="flex md:hidden text-white pt-36">
           <li className="px-4 cursor-pointer hover:bg-primary hover:text-black hover:p-0 ">
