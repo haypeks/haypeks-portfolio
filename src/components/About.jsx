@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
@@ -39,7 +40,14 @@ const About = () => {
               </div>
             </Link>
           </div>
-          <div name="skills" className="pt-20  md:w-1/2 md:pt-8">
+          <motion.div
+            initial={{ x: "100vw" }}
+            animate={{ x: 0 }}
+            transition={{ delay: 0.2 }}
+            whileHover={{ scale: 1.1 }}
+            name="skills"
+            className="pt-20  md:w-1/2 md:pt-8"
+          >
             <div className="py-6 md:my-4 bg-skillsbg">
               <h3 className="text-2xl md:text-3xl font-semibold text-center">
                 My Skills
@@ -83,7 +91,7 @@ const About = () => {
                 </li>
               </ul>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>
