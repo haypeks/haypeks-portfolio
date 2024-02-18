@@ -4,6 +4,7 @@ import portfolio from "../images/portfolio.png";
 import tipcalculator from "../images/tipcalculator.png";
 import matak from "../images/matak.png";
 import gamehub from "../images/gamehub.png";
+import { motion } from "framer-motion";
 
 const Portfolio = () => {
   const portfolios = [
@@ -47,8 +48,8 @@ const Portfolio = () => {
       id: 5,
       src: gamehub,
       heading: "GameHub",
-      hrefDemo: "https://linkedin.com",
-      hrefCode: "https://github.com/haypeks/Tip-calculator",
+      hrefDemo: "https://gaemehub.netlify.app/",
+      hrefCode: "https://github.com/haypeks/gamehub",
       paragraph:
         "is a three in one gaming platform. It's interactive playground fueled by the capabilities of JavaScript. From dynamic game mechanics to real-time updates, the site leverages the versatility of JavaScript to create engaging and responsive gaming environments.",
     },
@@ -62,24 +63,49 @@ const Portfolio = () => {
         "One size doesn't fit all when it comes to tipping preferences. With TipCalcPro, users can easily customize tip percentages, split bills among friends, and fine-tune the settings to match their preferences. The goal is to provide flexibility and efficiency in every tipping scenario.",
     },
   ];
+
+  const fadeInVariants = {
+    hidden: {
+      opacity: 0,
+      y: 100,
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: 0.1,
+        duration: 1,
+      },
+    },
+  };
+
   return (
     <div
       name="portfolio"
       className="w-full h-full py-20 bg-secondary justify-center items-center"
     >
       <div className="max-w-screen-xl p-4 mx-auto flex flex-col justify-center items-center w-full h-full">
-        <div>
+        <motion.div
+          variants={fadeInVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        >
           <h2 className="text-4xl font-semibold text-center">PORTFOLIO</h2>
           <p className="leading-8 font-regular text-sm md:text-base md:leading-10 my-4 text-center">
             Explore a collection of personal and client projects I've crafted,
             each accompanied by its own detailed case study
           </p>
-        </div>
+        </motion.div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-x-16 gap-y-8 sm:px-0">
           {portfolios.map(
             ({ id, src, heading, hrefDemo, hrefCode, paragraph }) => (
-              <div
+              <motion.div
+                variants={fadeInVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
                 key={id}
                 className="shadow-sm shadow-gray-700 bg-white p-4 md:my-8  rounded-lg "
               >
@@ -95,13 +121,13 @@ const Portfolio = () => {
                 </p>
                 <div className="flex items-center gap-8 justify-evenly">
                   <button className="bg-primary text-black w-fit text-xs cursor-pointer px-4 py-1 rounded border-b-2 border-black mt-4 md:font-bold font-medium hover:scale-105 hover:text-gray-700">
-                    <a href={hrefDemo}>Demo</a>
+                    <a href={hrefDemo}>Live Demo</a>
                   </button>
                   <button className="bg-primary text-black w-fit text-xs cursor-pointer px-4 py-1 rounded border-b-2 border-black mt-4 md:font-bold  font-medium hover:scale-105 hover:text-gray-700">
                     <a href={hrefCode}>Code</a>
                   </button>
                 </div>
-              </div>
+              </motion.div>
             )
           )}
         </div>

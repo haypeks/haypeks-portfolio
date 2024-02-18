@@ -3,22 +3,63 @@ import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 
 const About = () => {
+  const skillsList = [
+    { id: 1, skill: "HTML" },
+    { id: 2, skill: "CSS" },
+    { id: 3, skill: "Javascript" },
+    { id: 4, skill: "React" },
+    { id: 5, skill: "Bootstrap" },
+    { id: 6, skill: "Typescript" },
+    { id: 7, skill: "Tailwind" },
+    { id: 8, skill: "Figma" },
+    { id: 9, skill: "Next.js" },
+    { id: 10, skill: "PHP" },
+    { id: 11, skill: "GitHub" },
+    { id: 12, skill: "SEO" },
+  ];
+
+  const fadeInVariants = {
+    hidden: {
+      opacity: 0,
+      y: 100,
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: 0.1,
+        duration: 1,
+      },
+    },
+  };
+
   return (
     <div
       name="about"
       className="w-full h-full pt-20 pb-20 md:pb-64 justify-center items-center"
     >
       <div className="max-w-screen-xl p-4 mx-auto flex flex-col justify-center w-full h-full">
-        <div>
+        <motion.div
+          variants={fadeInVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        >
           <h2 className="text-4xl  font-semibold text-center">ABOUT ME</h2>
           <p className="leading-8 font-regular text-sm md:text-base md:leading-10 mt-4 text-center">
             Explore here for a deeper insight into my background showcasing my
             expertise in programming, technology and current skillset.
           </p>
-        </div>
+        </motion.div>
         <div></div>
         <div className="pt-10 md:flex gap-8">
-          <div className="md:w-1/2 py-6 md:pt-14">
+          <motion.div
+            variants={fadeInVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="md:w-1/2 py-6 md:pt-14"
+          >
             <h3 className=" text-2xl md:text-3xl font-semibold text-center  my-4">
               Discover more about me!
             </h3>
@@ -39,59 +80,34 @@ const About = () => {
                 Contact
               </div>
             </Link>
-          </div>
-          <motion.div
-            initial={{ x: "100vw" }}
-            animate={{ x: 0 }}
-            transition={{ delay: 0.2 }}
-            whileHover={{ scale: 1.1 }}
-            name="skills"
-            className="pt-20  md:w-1/2 md:pt-8"
-          >
+          </motion.div>
+          <div name="skills" className="pt-20  md:w-1/2 md:pt-8">
             <div className="py-6 md:my-4 bg-skillsbg">
-              <h3 className="text-2xl md:text-3xl font-semibold text-center">
+              <motion.h3
+                variants={fadeInVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                className="text-2xl md:text-3xl font-semibold text-center"
+              >
                 My Skills
-              </h3>
+              </motion.h3>
               <ul className="pt-6 grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-x-3 lg:gap-x-0 place-items-center">
-                <li className="text-center bg-black text-primary w-36 md:w-24 py-1 md:py-2">
-                  HTML
-                </li>
-                <li className="text-center bg-black text-primary w-36 md:w-24 py-1 md:py-2">
-                  CSS
-                </li>
-                <li className="text-center bg-black text-primary w-36 md:w-24 py-1 md:py-2">
-                  Javascript
-                </li>
-                <li className="text-center bg-black text-primary w-36 md:w-24 py-1 md:py-2">
-                  React
-                </li>
-                <li className="text-center bg-black text-primary w-36 md:w-24 py-1 md:py-2">
-                  Next JS
-                </li>
-                <li className="text-center bg-black text-primary w-36 md:w-24 py-1 md:py-2">
-                  Typescript
-                </li>
-                <li className="text-center bg-black text-primary w-36 md:w-24 py-1 md:py-2">
-                  Tailwind
-                </li>
-                <li className="text-center bg-black text-primary w-36 md:w-24 py-1 md:py-2">
-                  Bootstrap
-                </li>
-                <li className="text-center bg-black text-primary w-36 md:w-24 py-1 md:py-2">
-                  SEO
-                </li>
-                <li className="text-center bg-black text-primary w-36 md:w-24 py-1 md:py-2">
-                  GitHub
-                </li>
-                <li className="text-center bg-black text-primary w-36 md:w-24 py-1 md:py-2">
-                  Figma
-                </li>
-                <li className="text-center bg-black text-primary w-36 md:w-24 py-1 md:py-2">
-                  MySQL
-                </li>
+                {skillsList.map(({ id, skill }) => (
+                  <motion.li
+                    key={id}
+                    variants={fadeInVariants}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                    className="text-center bg-black text-primary w-36 md:w-24 py-1 md:py-2"
+                  >
+                    {skill}
+                  </motion.li>
+                ))}
               </ul>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </div>

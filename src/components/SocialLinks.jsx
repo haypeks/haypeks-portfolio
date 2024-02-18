@@ -48,7 +48,7 @@ const SocialLinks = () => {
     <motion.div
       initial={{ y: "100vw" }}
       animate={{ y: 0 }}
-      transition={{ delay: 0.2, duration: 1 }}
+      transition={{ delay: 0.1, duration: 1.5 }}
       className="hidden md:flex flex-col left-0 top-[35%] text-white absolute"
     >
       <ul className="hidden md:flex flex-col gap-8 px-4">

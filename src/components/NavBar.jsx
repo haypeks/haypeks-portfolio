@@ -36,7 +36,12 @@ const NavBar = () => {
       <motion.div
         initial={{ y: "-100vw" }}
         animate={{ y: 0 }}
-        transition={{ delay: 0.2, duration: 1, type: "spring" }}
+        transition={{
+          delay: 0.1,
+          duration: 1.5,
+          type: "spring",
+          stiffness: 30,
+        }}
       >
         <img className="w-24 h-6.24" src={Logo} alt="" />
       </motion.div>

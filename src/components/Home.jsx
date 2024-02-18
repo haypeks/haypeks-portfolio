@@ -17,7 +17,7 @@ const Home = () => {
           <TypeAnimation
             sequence={["HEY! I'M HAYPEKS", 1000]}
             wrapper="span"
-            speed={400}
+            speed={250}
             style={{ fontSize: "1em" }}
             repeat={1000}
             cursor={false}
@@ -26,7 +26,7 @@ const Home = () => {
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.2, duration: 1 }}
+          transition={{ delay: 0.1, duration: 3 }}
           className="text-gray-400 mx-auto lg:text-md text-center text-base pt-2 pb-6 sm:px-20 xl:w-4/6 w-full"
         >
           A <strong className="text-white">Front-End Developer</strong> with 3
@@ -37,9 +37,9 @@ const Home = () => {
         </motion.p>
         <Link to="portfolio" smooth duration={500}>
           <motion.div
-            initial={{ x: "100vw" }}
-            animate={{ x: 0 }}
-            transition={{ delay: 0.2 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.1, duration: 3 }}
             whileHover={{ scale: 1.1 }}
             className="bg-primary text-black w-fit cursor-pointer rounded px-6 py-1 md:font-bold md:px-16 md:py-2 font-medium hover:scale-110 hover:text-gray-700"
           >
