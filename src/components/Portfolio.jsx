@@ -13,8 +13,8 @@ const Portfolio = () => {
       id: 1,
       src: kry8,
       heading: "Kry-8",
-      hrefDemo: "https://eclectic-clafoutis-98a4e5.netlify.app",
-      hrefCode: "https://github.com/haypeks/Landing-Page",
+      hrefDemo: "https://kry-8.netlify.app",
+      hrefCode: "https://github.com/haypeks/Kry-8-",
       paragraph:
         " an AI writing website crafted with React for a seamless and dynamic writing experience. With a sleek and responsive design,  it combines the efficiency of React to offer a user-centric platform for innovative content creation. Embrace a new era of gradient in web design.                ",
     },
@@ -22,7 +22,7 @@ const Portfolio = () => {
       id: 2,
       src: matak,
       heading: "Matak",
-      hrefDemo: "https://grand-concha-1e5ca0.netlify.app",
+      hrefDemo: "https://matak.netlify.app/",
       hrefCode: "https://github.com/haypeks/Ecommerce",
       paragraph:
         " is a responsive ecommerce website for a clothing business. Powered by the trio of HTML, CSS, and Vanilla JavaScript, this website is a testament to the elegance of simplicity. Built with users in mind, Matak offers a user-focused experience and responsive on all screen sizes.                    ",
